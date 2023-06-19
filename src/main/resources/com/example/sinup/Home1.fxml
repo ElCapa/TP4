@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sinup.HomeController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="1306.0" stylesheets="@Style2.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+         </padding>
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../letraP.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="233.0" layoutX="40.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Captura_de_ecrã_2023-06-18_113913-removebg-preview.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Pane prefHeight="70.0" prefWidth="86.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="45.0" prefWidth="170.0" spacing="10.0" stylesheets="@Style2.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../more.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="27.0" prefWidth="93.0" text="Add Photo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="white_background" />
+                  <String fx:value="mouse-moved" />
+                  <String fx:value="shadow" />
+                  <String fx:value="rect-round" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="460.0" spacing="5.0" stylesheets="@Style2.css">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="356.0" promptText="Search" styleClass="transparente" stylesheets="@Style2.css" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../magnifying.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="300.0" />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="rect-round" />
+                  <String fx:value="shadow" />
+                  <String fx:value="white_background" />
+               </styleClass>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <HBox prefHeight="739.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="750.0" prefWidth="14.0">
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="259.0" prefWidth="300.0" spacing="5.0" styleClass="white_background" stylesheets="@Style2.css">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../user.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="nomeDeLogin" text="Fabio Monteiro">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="192.0" text="fjmonteiro@uta.cv" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="482.0" prefWidth="300.0" spacing="15.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="118.0" spacing="10.0" style="-fx-cursor: HAND;" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../home.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="27.0" prefWidth="52.0" text="Home">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="mouse-moved" />
+                              <String fx:value="selct" />
+                           </styleClass>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0" style="-fx-cursor: HAND;" styleClass="mouse-moved" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../group.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="21.0" prefWidth="160.0" text="Grupo">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0" style="-fx-cursor: HAND;" styleClass="mouse-moved" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../pedra.png.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="21.0" prefWidth="160.0" text="Feed">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="111.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0" style="-fx-cursor: HAND;" styleClass="mouse-moved" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../help.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="21.0" prefWidth="160.0" text="Help">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="161.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0" style="-fx-cursor: HAND;" styleClass="mouse-moved" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../settings.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="21.0" prefWidth="160.0" text="Setings">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="212.0" onMouseClicked="#goToSingup" prefHeight="50.0" prefWidth="300.0" spacing="10.0" style="-fx-cursor: HAND;" styleClass="mouse-moved" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../signup.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="21.0" prefWidth="160.0" text="Sing Up">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="262.0" onMouseClicked="#closeButtonOnAction" prefHeight="50.0" prefWidth="300.0" spacing="10.0" style="-fx-cursor: HAND;" styleClass="mouse-moved" stylesheets="@Style2.css">
+                           <children>
+                              <ImageView fx:id="close" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../logout.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="21.0" prefWidth="160.0" text="Logout">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <VBox prefHeight="770.0" prefWidth="320.0" spacing="50.0" stylesheets="@Style2.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="314.0" text="Grupos" textFill="#8ac447">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="100.0" stylesheets="@Style2.css">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="314.0" text="Grupo 1" textFill="#050505">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="grup" />
+                  <String fx:value="white_background" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="70.0" prefHeight="100.0" prefWidth="298.0" stylesheets="@Style2.css">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="314.0" text="Grupo 2" textFill="#050505">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="grup" />
+                  <String fx:value="white_background" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="170.0" prefHeight="100.0" prefWidth="298.0" stylesheets="@Style2.css">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="314.0" text="Grupo 3" textFill="#050505">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="grup" />
+                  <String fx:value="white_background" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="270.0" prefHeight="100.0" prefWidth="298.0" stylesheets="@Style2.css">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="314.0" text="Grupo 4" textFill="#050505">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="grup" />
+                  <String fx:value="white_background" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <Pane prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="768.0" prefWidth="788.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="767.0" prefWidth="782.0">
+                     <children>
+                        <VBox layoutX="20.0" layoutY="21.0" prefHeight="300.0" prefWidth="300.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="300.0" spacing="5.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER_LEFT">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="Fabio Montiero" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_verified.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="4.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="4 dias atras" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_public.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                              <ImageView fitHeight="173.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image(3).png" />
+                                 </image>
+                              </ImageView>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="300.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" onMouseClicked="#onImageClick" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../heart.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="likeLabel" text="Label" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../chat.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Label" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="406.0" layoutY="21.0" prefHeight="300.0" prefWidth="300.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="300.0" spacing="5.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER_LEFT">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="Fabio Montiero" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_verified.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="4.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="4 dias atras" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_public.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                              <TextArea prefHeight="172.0" prefWidth="300.0" text="O Lorem Ipsum é um texto modelo &#10;da indústria tipográfica e de impressão. &#10;O Lorem Ipsum tem vindo a ser o texto &#10;padrão usado por estas indústrias desde o ano &#10;de 1500, quando uma misturou os caracteres de &#10;um texto para criar um espécime de livro. &#10;Este texto não só sobreviveu 5 séculos, mas &#10;também o salto para a tipografia electrónica, &#10;mantendo-se essencialmente inalterada." />
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="300.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" onMouseClicked="#onImageClick1" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../heart.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="likeLabel1" text="Label" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../chat.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Label" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="406.0" layoutY="330.0" prefHeight="300.0" prefWidth="300.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="300.0" spacing="5.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER_LEFT">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="Jose Costa" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_verified.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="4.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="1 minuto" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_public.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                              <ImageView fitHeight="173.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image(3).png" />
+                                 </image>
+                              </ImageView>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="300.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" onMouseClicked="#onImageClick3" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../heart.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="likeLabel3" text="Label" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../chat.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Label" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="20.0" layoutY="330.0" prefHeight="300.0" prefWidth="300.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="300.0" spacing="5.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="CENTER_LEFT">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="Ramilton Monteiro" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_verified.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="4.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="13h" />
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../ic_public.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                              <TextArea prefHeight="178.0" prefWidth="300.0" text="O Lorem Ipsum é um texto model&#10;o da indústria tipográfica e de impressão. &#10;O Lorem Ipsum tem vindo a ser o text&#10;o padrão usado por estas indústrias de&#10;sde o ano de 1500, quando uma misturo&#10;u os caracteres de um texto para criar um e&#10;spécime de livro. Este texto não só sobrevi&#10;veu 5 séculos, mas também o salto para a ti&#10;pografia electrónica, mantendo-se essencial&#10;mente inalterada." />
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="300.0" stylesheets="@Style2.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" onMouseClicked="#onImageClick2" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../heart.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="likeLabel2" text="Label" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="mouse-moved">
+                                             <image>
+                                                <Image url="@../../../chat.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Label" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white_background" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
